@@ -37,11 +37,11 @@ group :development, :test do
   gem 'rubocop'
   gem 'pronto'
   gem 'pronto-rubocop', require: false
-  # gem 'pronto-flay', require: false
+  gem 'pronto-flay', require: false
   gem 'pronto-simplecov', require: false
-  # gem 'pronto-brakeman', require: false
-  # gem 'pronto-reek'
-  # gem 'pronto-haml', require: false
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-reek'
+  gem 'pronto-haml', require: false
 end
 
 group :development do
