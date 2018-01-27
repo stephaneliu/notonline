@@ -50,5 +50,4 @@ test:
 production:
   <<: *default
   database: notonline_production
-  username: notonline
   password: <%= ENV['NOTONLINE_DATABASE_PASSWORD'] %>
