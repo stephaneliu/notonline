@@ -45,6 +45,7 @@ end
 group :development do
   gem 'annotate'
   gem 'guard'
+  gem 'guard-brakeman'
   gem 'guard-reek'
   gem 'guard-rspec'
   gem 'guard-rubocop'

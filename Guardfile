@@ -66,4 +66,17 @@ group :red_green_refactor, halt_on_fail: true do
     watch(%r{.+\.rb$})
     watch('.reek')
   end
+
+  brakeman_options = {
+    run_on_start: true,
+    quiet: true
+  }
+
+  guard 'brakeman', brakeman_options do
+    watch(%r{^app/.+\.(erb|haml|rhtml|rb)$})
+    watch(%r{^config/.+\.rb$})
+    watch(%r{^lib/.+\.rb$})
+    watch('Gemfile')
+  end
 end
+
