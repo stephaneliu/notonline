@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 group :red_green_refactor, halt_on_fail: true do
   rspec_options = {
     cmd: 'bin/rspec',
@@ -53,9 +55,15 @@ group :red_green_refactor, halt_on_fail: true do
       Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
     end
   end
+end
 
-  # guard :rubocop do
-  #   watch(%r{.+\.rb$})
-  #   watch(%r{(?:.+/)?\.rubocop(?:_todo)?\.yml$}) { |m| File.dirname(m[0]) }
-  # end
+rubocop_options = {
+  all_on_start: false,
+  cli: '--rails --parallel',
+  # keep_failed: true,
+}
+
+guard :rubocop, rubocop_options do
+  watch(%r{.+\.rb$})
+  watch(%r{(?:.+/)?\.rubocop(?:_todo)?\.yml$}) { |m| File.dirname(m[0]) }
 end
