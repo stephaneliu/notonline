@@ -1,47 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/sliu/code/notonline/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/sliu/code/notonline/app/models/application_record.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/sliu/code/notonline/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/sliu/code/notonline/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/sliu/code/notonline/app/controllers/application_controller.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/sliu/code/notonline/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/sliu/code/notonline/app/channels/application_cable/channel.rb": [
-        0,
-        0,
-        0,
-        0
-      ]
     },
-    "timestamp": 1517048775
+    "timestamp": 1517170634
   }
 }
