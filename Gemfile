@@ -7,7 +7,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bootstrap', '~>4.0.0'
 gem 'coffee-rails', '~> 4.2' # Use CoffeeScript for .coffee assets and views
 gem 'devise'
@@ -19,7 +18,6 @@ gem 'rails', '~> 5.1.4'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5' # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'uglifier', '>= 1.3.0'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -35,7 +33,7 @@ group :development, :test do
   gem 'pronto-brakeman', require: false
   gem 'pronto-flay', require: false
   gem 'pronto-haml', require: false
-  gem 'pronto-reek'
+  gem 'pronto-reek', require: false
   gem 'pronto-rubocop', require: false
   gem 'pronto-simplecov', require: false
   gem 'pry-rails'
@@ -52,16 +50,14 @@ group :development do
   gem 'guard-rubocop'
   gem 'html2haml'
   gem 'hub'
+  gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'meta_request'
   gem 'rails_layout'
-  gem 'spring-commands-rspec'
-  gem 'terminal-notifier-guard'
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'web-console', '>= 3.3.0'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'terminal-notifier-guard'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
