@@ -31,7 +31,6 @@ group :development, :test do
   gem 'faker'
   gem 'pronto'
   gem 'pronto-brakeman', require: false
-  gem 'pronto-flay', require: false
   gem 'pronto-haml', require: false
   gem 'pronto-reek', require: false
   gem 'pronto-rubocop', require: false
@@ -46,6 +45,7 @@ end
 group :development do
   gem 'annotate'
   gem 'guard'
+  gem 'guard-reek'
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'html2haml'
