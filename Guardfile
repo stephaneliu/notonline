@@ -32,8 +32,8 @@ group :red_green_refactor, halt_on_fail: true do
 
     watch(rails.controllers) do |m|
       [rspec.spec.call("routing/#{m[1]}_routing"),
-        rspec.spec.call("controllers/#{m[1]}_controller"),
-        rspec.spec.call("acceptance/#{m[1]}")]
+       rspec.spec.call("controllers/#{m[1]}_controller"),
+       rspec.spec.call("acceptance/#{m[1]}")]
     end
 
     # Rails config changes
@@ -62,6 +62,3 @@ group :red_green_refactor, halt_on_fail: true do
     watch(%r{(?:.+/)?\.rubocop(?:_todo)?\.yml$}) { |m| File.dirname(m[0]) }
   end
 end
-
-
-
