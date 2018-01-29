@@ -410,7 +410,7 @@ DEPENDENCIES
   guard-reek
   guard-rspec
   guard-rubocop
-  haml-rails
+  haml-rails (~> 1.0.0)
   html2haml
   hub
   jbuilder (~> 2.5)
