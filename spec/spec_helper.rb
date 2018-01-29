@@ -8,7 +8,7 @@ if ENV['COVERAGE'] == 'true'
     maximum_coverage_drop 5
 
     add_filter do |source|
-      source.lines.count < 7
+      source.lines.count < 8
     end
   end
 end
