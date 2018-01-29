@@ -12,7 +12,7 @@ gem 'coffee-rails', '~> 4.2' # Use CoffeeScript for .coffee assets and views
 gem 'devise'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.5'
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'pg', '~>0.20.0'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.4'
 gem 'sass-rails', '~> 5.0'
@@ -45,7 +45,7 @@ end
 group :development do
   gem 'annotate'
   gem 'guard'
-  gem 'guard-brakeman'
+  gem 'guard-brakeman', require: false
   gem 'guard-reek'
   gem 'guard-rspec'
   gem 'guard-rubocop'
