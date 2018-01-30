@@ -44,6 +44,7 @@ end
 
 group :development do
   gem 'annotate'
+  gem 'foreman'
   gem 'guard'
   gem 'guard-brakeman', require: false
   gem 'guard-reek'
