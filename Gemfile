@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg', '~>0.20.0'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.4'
+gem 'rack-timeout'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5' # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'uglifier', '>= 1.3.0'
@@ -44,6 +45,7 @@ end
 
 group :development do
   gem 'annotate'
+  gem 'foreman'
   gem 'guard'
   gem 'guard-brakeman', require: false
   gem 'guard-reek'
