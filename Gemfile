@@ -61,6 +61,7 @@ group :test do
   gem 'rspec_junit_formatter'
   gem 'pry-rails'
   gem 'rspec-rails'
+  gem 'selenium-webdriver' # system test using selenium_chrome_headless
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
   gem 'simplecov'
 end
