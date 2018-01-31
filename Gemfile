@@ -28,6 +28,7 @@ gem 'uglifier', '>= 1.3.0'
 group :development do
   gem 'annotate'
   gem 'better_errors'
+  gem 'binding_of_caller' # REPL in browser
   gem 'foreman'
   gem 'guard'
   gem 'guard-brakeman', require: false
