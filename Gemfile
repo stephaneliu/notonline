@@ -61,6 +61,7 @@ group :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'simplecov'
 end
 
 ruby '2.4.1'
