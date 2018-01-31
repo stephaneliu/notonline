@@ -30,20 +30,19 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'pronto'
-  gem 'pronto-brakeman', require: false
-  gem 'pronto-haml', require: false
-  gem 'pronto-reek', require: false
-  gem 'pronto-rubocop', require: false
-  gem 'pronto-simplecov', require: false
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'selenium-webdriver'
-  gem 'terminal-notifier'
 end
 
 group :development do
+  gem 'hub'
+  gem 'meta_request'
+  gem 'rails_layout'
+  gem 'web-console', '>= 3.3.0'
+end
+
+group :local_development do
   gem 'annotate'
   gem 'foreman'
   gem 'guard'
@@ -52,15 +51,18 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'html2haml'
-  gem 'hub'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'meta_request'
-  gem 'rails_layout'
+  gem 'pronto'
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-haml', require: false
+  gem 'pronto-reek', require: false
+  gem 'pronto-rubocop', require: false
+  gem 'pronto-simplecov', require: false
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'terminal-notifier'
   gem 'terminal-notifier-guard'
-  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
