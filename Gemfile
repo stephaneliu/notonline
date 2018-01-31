@@ -25,25 +25,9 @@ gem 'uglifier', '>= 1.3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-group :development, :test do
-  gem 'better_errors'
-  gem 'capybara', '~> 2.13'
-  gem 'factory_bot_rails'
-  gem 'faker'
-  gem 'pry-rails'
-  gem 'rspec-rails'
-  gem 'rubocop'
-end
-
 group :development do
-  gem 'hub'
-  gem 'meta_request'
-  gem 'rails_layout'
-  gem 'web-console', '>= 3.3.0'
-end
-
-group :local_development do
   gem 'annotate'
+  gem 'better_errors'
   gem 'foreman'
   gem 'guard'
   gem 'guard-brakeman', require: false
@@ -51,21 +35,31 @@ group :local_development do
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'html2haml'
+  gem 'hub'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'meta_request'
   gem 'pronto'
   gem 'pronto-brakeman', require: false
   gem 'pronto-haml', require: false
   gem 'pronto-reek', require: false
   gem 'pronto-rubocop', require: false
   gem 'pronto-simplecov', require: false
+  gem 'rails_layout'
+  gem 'rubocop'
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'terminal-notifier'
   gem 'terminal-notifier-guard'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
+  gem 'capybara', '~> 2.13'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'rspec-rails'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
