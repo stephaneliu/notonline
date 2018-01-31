@@ -58,6 +58,7 @@ group :test do
   gem 'capybara', '~> 2.13'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'rspec_junit_formatter'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
