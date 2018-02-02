@@ -32,11 +32,12 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller' # REPL in browser
   gem 'foreman'
-  gem 'guard'
+  gem 'guard', require: false
   gem 'guard-brakeman', require: false
-  gem 'guard-reek'
-  gem 'guard-rspec'
-  gem 'guard-rubocop'
+  gem 'guard-livereload', require: false
+  gem 'guard-reek', require: false
+  gem 'guard-rspec', require: false
+  gem 'guard-rubocop', require: false
   gem 'html2haml'
   gem 'hub'
   gem 'listen', '>= 3.0.5', '< 3.2'
