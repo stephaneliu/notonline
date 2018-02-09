@@ -9,6 +9,7 @@ end
 
 gem "font-awesome-rails"
 gem 'bootstrap', '~>4.0.0'
+gem 'bootsnap', require: false
 gem 'coffee-rails', '~> 4.2' # Use CoffeeScript for .coffee assets and views
 gem 'devise'
 gem 'haml-rails', '~>1.0.0'
